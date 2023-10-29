@@ -11,11 +11,6 @@ st.write('''
 เราจะลองทำ San Francisco Dataset กันดู
 ''')
 
-trees_df = pd.read_csv('trees.csv')
-df_dbh_grouped = pd.DataFrame(
-    trees_df.groupby(['dbh']).count()['tree_id'])
-df_dbh_grouped.columns = ['tree_count']
-
 owners = st.sidebar.multiselect(
     "Tree Owner Filter",
     trees_df['caretaker'].unique()
@@ -23,6 +18,11 @@ owners = st.sidebar.multiselect(
 
 if owners:
     trees_df = trees_df[ trees_df['caretaker'].isin(owners) ]
+
+trees_df = pd.read_csv('trees.csv')
+df_dbh_grouped = pd.DataFrame(
+    trees_df.groupby(['dbh']).count()['tree_id'])
+df_dbh_grouped.columns = ['tree_count']
 
 tab1, tab2, tab3 = st.tabs(["Line Chart", "Bar Chart", "Area Chart"])
 with tab1:

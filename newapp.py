@@ -43,6 +43,6 @@ df_dbh_grouped.columns = ['tree_count']
 # ส่วนใหญ่ของต้นไม้ใน SF มีเส้นผ่าศุนย์กลาง 3' (2,721 ต้น)
 # """)
 
-trees_df = trees_df.dropna(subset=['longtitude', 'latitude'])
+trees_df = trees_df.dropna(subset=['longitude', 'latitude'])
 trees_df = trees_df.sample(n=1000, replace= True)
 st.map(trees_df)

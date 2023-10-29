@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # --- 01
-# https://docs.streamlit.io/library/api-reference/write-magic
+ https://docs.streamlit.io/library/api-reference/write-magic
 st.markdown('สวัสดี! **Streamlit**')
 st.write('จากโค้ด', '`st.markdown("สวัสดี!")`')
 st.write(pd.DataFrame({
@@ -27,12 +27,12 @@ st.divider()
 # fig1, ax1 = plt.subplots()
 # ax1 = plt.hist(list_of_means)
 # st.pyplot(fig1)
-#
+
 # --- 04
 # fig2, ax2 = plt.subplots()
 # ax2 = plt.hist([1, 1, 1, 1])
 # st.pyplot(fig2)
-
+#
 # --- 05
 # perc_heads = st.number_input(label='Chance of Coins Landing on Heads',
 #                              min_value=0.0, max_value=1.0,

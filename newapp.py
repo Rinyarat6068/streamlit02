@@ -10,8 +10,8 @@ st.set_page_config(layout='wide')
 show_pages(
     [
         Page("newapp.py","Home","🏠"),
-        Page("tabs.py","Tab Layout","📊"),
-        Page("mains.py","Map Layour","🗺️")
+        Page("pages/tabs.py","Tab Layout","📊"),
+        Page("pages/mains.py","Map Layour","🗺️")
     ]
 )
 

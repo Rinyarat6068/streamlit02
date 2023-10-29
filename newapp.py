@@ -3,7 +3,17 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+from st_pages import Page, show_pages
+
 st.set_page_config(layout='wide')
+
+show_pages(
+    [
+        Page("newapp.py","Home","🏠"),
+        Page("tabs.py","Tab Layout","📊")
+        Page("mains.py","Map Layour","🗺️")
+    ]
+)
 
 st.markdown('สวัสดี! *streamlit*')
 st.title('Layout and Decoration')

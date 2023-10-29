@@ -11,7 +11,7 @@ show_pages(
     [
         Page("newapp.py","Home","🏠"),
         Page("pages/tabs.py","Tab Layout","📊"),
-        Page("pages/mains.py","Map Layour","🗺️")
+        Page("pages/main.py","Map Layour","🗺️")
     ]
 )
 
